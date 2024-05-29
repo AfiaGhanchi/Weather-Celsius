@@ -1,5 +1,14 @@
 var userInp = prompt("enter your weather temperature in Celsius");
-if (userInp >= 40) {
+if (userInp >= 60) {
+    document.write('<div class="card C animate__animated animate__flash" style="width: 18rem;  margin:auto; margin-top:100px">' +
+        '<img src="temp.gif" class="card-img-top Cshape" alt="...">' +
+        '<div class="card-body m-auto">' +
+        '<h5 class="card-title">Weather not Found🤨</h5>' +
+        '<h1 class=" m-auto">' + userInp + "°C" + '</h1>' +
+        '</div>' +
+        '</div>')
+}
+else if (userInp >= 40) {
     document.write('<div class="card C animate__animated animate__bounceInDown" style="width: 18rem; margin:auto; margin-top:100px">' +
         ' <img src="hot.gif" class="card-img-top  Cshape" alt="...">' +
         '<div  class="card-body m-auto">' +
@@ -83,3 +92,25 @@ else if (userInp >= 0) {
         '</div>'
     )
 }
+else if (userInp <= -1) {
+    document.write(
+        '<div class="card C animate__animated animate__shakeX" style="width: 18rem; margin:auto; margin-top:100px">' +
+        ' <img src="freez.gif" class="card-img-top  Cshape" alt="...">' +
+        '<div class="card-body  m-auto ">' +
+        '<h5 class="card-title">Frrreeezzzz🥶</h5>' +
+
+        '<h1 class=" m-auto">' + userInp + "°C" + '</h1>' +
+        '</div>' +
+        '</div>'
+    )
+}
+else if (userInp >= 60) {
+    document.write('<div class="card C animate__animated animate__flash" style="width: 18rem;">' +
+        '<img src="temp.gif" class="card-img-top" alt="...">' +
+        '<div class="card-body">' +
+        '<h5 class="card-title">Weather not Found🤨</h5>' +
+        '<h1 class=" m-auto">' + userInp + "°C" + '</h1>' +
+        '</div>' +
+        '</div>')
+}
+
